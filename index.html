@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Button Example</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript">
+			function toggleTheme() {
+				document.body.classList.toggle('theme-dark');
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1>Button Style & Custom Properties</h1>
+			<p>Demo of light and dark themes. Light theme uses a bright button with white text, while dark theme uses a light button with black text.</p>
+			<p>It starts with a range of greys, blues, and yellows. These shades could be generated from single base colors, using Sass or PostCSS. The base colors are assigned to specific properity variables, <code>--color-button</code>, <code>--color-button-text</code>, <code>--color-button--hover</code>, etc. Since the text, hover colors, etc don't follow a pattern from light to dark, though, we can't assume a single "theme color" + variations will work. The button color variables still need to be individually assigned.</p>
+
+			<p><button onClick="javascript:toggleTheme();">Toggle Theme</button></p>
+
+			<ul style="margin-top:2rem;">
+				<li><button>Primary Style</button></li>
+				<li><button class="hover">Hover Style</button></li>
+				<li><button class="active">Active Style</button></li>
+				<li><button class="focus">Focus Style</button></li>
+				<li><button disabled>Disabled Style</button></li>
+			</ul>
+		</div>
+	</body>
+</html>
